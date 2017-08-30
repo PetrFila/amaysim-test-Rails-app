@@ -1,0 +1,14 @@
+<h1>Hi there</h1>
+
+<% @plans.each_with_index do |plan, index| %>
+  <!-- <h3>blah</h3><br> -->
+  <% if index == 1 %>
+    <div class="alert alert-success" role="alert">
+        <%= plan %><br>
+    </div>
+  <% else %>
+    <div class="alert alert-danger" role="alert">
+        <%= plan %><br>
+    </div>
+  <% end %>
+<% end %>
